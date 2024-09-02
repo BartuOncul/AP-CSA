@@ -1,1 +1,176 @@
+The complier will ignore any text between the /* and */ characters.
 
+public class HelloWorld} -------> Class Decleration
+
+Class Decleration) Identifies the name, the start and the end of the class.
+
+(It must be math the file name)
+
+public static void main (String [] args){ ----> Main method
+
+## String Literal
+
+String literal is enclosed in double quotes
+A string literal in Java is an exact sequence of charaters (letters, numbers and symbols) which are enclosed in two quotation marks.
+
+**For example)** "ABC123#£" or "1234567"
+
+## Syntax/Complier Eror
+
+These  erors occur when the code is wrongly typed. (Yazmada hata olursa Syntax/Complier Eror olur.)
+
+## Exception
+
+The program attempts to divide a number by 0.
+
+## Logic Eror
+
+Example) The programmer accidently uses a minus(-) instead of plus (+) when finding the sum of the numbers.
+
+* A type is set of values (a domain) and a set of operations on them.
+* Data type can be categorized as either primitive or referance. (non primitive)
+* The primitive data types used in this course define the set of opertaions for numbers and boolean values.
+
+## Primitive Data
+
+boolean ---> True or False
+
+int ----> 2,3,5,7,9
+
+double ----> 2.5, 3.12, 8.2
+
+Primitive data types are generally part of the Java. Except for String, non-primitive types are generally created by the programmer.
+Non-primitive types can use mathods to perform actions, but primitive types can not.
+
+## What is a Variable?
+
+A variable is a name given to a memory location that is holding a specified type of value.
+
+gpa --> 3.8
+
+numberOftACOS --> 12
+
+ISwINDY ---> True
+
+
+## Naming a Variable
+* May consist of letters, digits or an underscore.
+* May not start with a digit.
+* Spaces are not allowed.
+* May not use any other vharaters such as @ or $.
+May not use Java reserv words such as *public, static.*
+
+## Declaring Variables in Code
+**dataType variableName**
+
+int total;
+
+double inRate;
+
+boolean giveBonus;
+
+**final** 
+---> Is a variable that can not be changed once we give it a value.
+* final double PI;
+* final int DAYS_IN_WEEKS;
+* final boolean JAVA_ROCKS;
+
+**Not)** Final ile kulanilan variable'lar hepsi büyük harfle yazılır ve kısa çizgi ile ayrılır.
+
+There are three primitive data types which are int, double and boolean.
+
+Each variable has asociated memory that is used to hold its value.
+
+## Literal vs String Literal
+
+**Literal** ---> The source of code representation of a fixed value ---> 3
+
+**String Literal** ---->Enclosed in double quotes. ---> "3"
+
+`System.out.println(3)` --> 3
+
+`System.out.println("3")` --> 3
+
+`System.out.println("3" + "3")` --> 33
+
+`System.out.println(3 + 3)` --> 6
+
+* Addition (+)
+
+* Subtraction (-)
+
+* Multipcation (*)
+
+* Divison (/)
+
+* Modulus (%)
+
+
+
+double + int ---> double
+
+double - int ---> double
+
+double * int ---> double
+
+double / int ---> double
+
+double % int ---> double
+
+`System.out.println(17 / 5);` ---> 3
+`System.out.println(17 % 5);` ---> 2
+
+`System.out.println(17.0 + 5);` ---> 22.0
+`System.out.println(17.0 - 5);` ---> 12.0
+`System.out.println(17.0 * 5);` ---> 85.0
+`System.out.println(17.0 % 5);` ---> 2.0
+`System.out.println(17.0 / 5);` ---> 3.4
+
+(=) assigns the value on the right of the assignment operator to the variable on the left.
+
+---
+### Example
+
+`int firstValue = 13;`
+
+`double secondValue =18.5;`
+
+`double sum = firstValue + secondValue;`
+
+---
+
+Compound assignment operators (+=, -=, *=, /=, &=) can be used in place of the assignment operator.
+
+* x+=7 <---> x=x+7
+* x-=3 <---> x=x-3
+* x*=5 <---> x=x*5
+* x/=7 <---> x=x/10
+* x%=2 <---> x=x%2
+
+The increment operator (++) and decrement operator (--) are used to add 1 or subtract 1 from the stored value of a variable.
+
+* x++ <---> x+=1 <---> x=x+1
+* x-- <---> x-=1 <---> x=x-1
+
+## What is Casting
+We use casting in Java to change the data type of a variable to another.
+### Example
+
+(int) (2.5 * 3.0)---> 7
+
+(double) (25 / 4)---> 6.25
+
+6 / (double) 5 ---> 1.2
+
+(int) (12 / 5)---> 2
+
+(int) (6.75 + 0.5)---> 7
+
+int) (-10.8 - 0.5)---> -11
+
+---
+
+* Integer.MAX_VALUE
+* Integer.MIN_VALUE
+
+**Not)** Int değeri max değerden büyükse veya min'den kü.ükse overflow eror'u verir.
