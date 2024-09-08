@@ -21,3 +21,23 @@ Example) The programmer accidently uses a minus(-) instead of plus (+) when find
 ## Exception
 
 The program attempts to divide a number by 0.
+
+## Logic Eror
+
+Example) The programmer accidently uses a minus(-) instead of plus (+) when finding the sum of the numbers.
+
+* A type is set of values (a domain) and a set of operations on them.
+* Data type can be categorized as either primitive or referance. (non primitive)
+* The primitive data types used in this course define the set of opertaions for numbers and boolean values.
+
+## Primitive Data
+
+boolean ---> True or False
+
+int ----> 2,8,10,20
+
+double ----> 2.5, 8.12, 11.7
+
+Primitive data types are generally part of the Java. Except for String, non-primitive types are generally created by the programmer.
+Non-primitive types can use mathods to perform actions, but primitive types can not.
+
