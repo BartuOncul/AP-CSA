@@ -1,1 +1,23 @@
+## String Literal
 
+String literal is enclosed in double quotes
+A string literal in Java is an exact sequence of charaters (letters, numbers and symbols) which are enclosed in two quotation marks.
+
+**For example)** "ABC123#£" or "1234567"
+
+## Syntax/Complier Eror
+
+These  erors occur when the code is wrongly typed. (Yazmada hata olursa Syntax/Complier Eror olur.)
+
+
+## Logic Eror
+
+Example) The programmer accidently uses a minus(-) instead of plus (+) when finding the sum of the numbers.
+
+* A type is set of values (a domain) and a set of operations on them.
+* Data type can be categorized as either primitive or referance. (non primitive)
+* The primitive data types used in this course define the set of opertaions for numbers and boolean values.
+
+## Exception
+
+The program attempts to divide a number by 0.
