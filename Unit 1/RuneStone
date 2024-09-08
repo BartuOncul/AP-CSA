@@ -96,4 +96,10 @@ double % int ---> double
 `System.out.println(17.0 % 5);` ---> 2.0
 `System.out.println(17.0 / 5);` ---> 3.4
 
+---
+
+* Integer.MAX_VALUE
+* Integer.MIN_VALUE
+
+**Not)** Int değeri max değerden büyükse veya min'den kü.ükse overflow eror'u verir.
 
