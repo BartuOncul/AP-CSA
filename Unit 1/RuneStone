@@ -41,3 +41,24 @@ double ----> 2.5, 8.12, 11.7
 Primitive data types are generally part of the Java. Except for String, non-primitive types are generally created by the programmer.
 Non-primitive types can use mathods to perform actions, but primitive types can not.
 
+## What is a Variable?
+
+A variable is a name given to a memory location that is holding a specified type of value.
+
+gpa --> 3.8
+
+numberOftACOS --> 12
+
+ISwINDY ---> True
+
+
+## Naming a Variable
+* May consist of letters, digits or an underscore.
+* May not start with a digit.
+* Spaces are not allowed.
+* May not use any other vharaters such as @ or $.
+May not use Java reserv words such as *public, static.*
+
+** Final is a important point as well.
+
+
