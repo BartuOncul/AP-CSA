@@ -62,3 +62,16 @@ May not use Java reserv words such as *public, static.*
 ** Final is a important point as well.
 
 
+## Literal vs String Literal
+
+**Literal** ---> The source of code representation of a fixed value ---> 3
+
+**String Literal** ---->Enclosed in double quotes. ---> "3"
+
+`System.out.println(3)` --> 3
+
+`System.out.println("3")` --> 3
+
+`System.out.println("3" + "3")` --> 33
+
+`System.out.println(3 + 3)` --> 6
