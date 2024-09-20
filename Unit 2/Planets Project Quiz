@@ -1,0 +1,40 @@
+public class Planets 
+{
+    private String name;
+    private double distanceSun;
+    private double diameter;
+    private int numOfMoons;
+
+    public Planets(String nm, double disSun, double dia, int numMoons)
+    {
+        name = nm;
+        distanceSun = disSun;
+        diameter = dia;
+        numOfMoons = numMoons;
+    }
+    public void planetInfo()
+    {
+        System.out.println("Planet: "+name);
+        System.out.println("Distance from the sun: "+distanceSun);
+        System.out.println("Diameter: "+diameter);
+        System.out.println("Number of Moons: "+numOfMoons);
+    }
+    public static double calculateTime(double distance1, double distance2)
+    {
+        double speedSpaceship = 50000;
+        double distanceDiff = Math.abs(distance1-distance2);
+        return distanceDiff/speedSpaceship;
+    }
+    public static void main(String[]args)
+    {
+        Planets earth = new Planets("Earth",149.6, 12.742, 1);
+        earth.planetInfo();
+        Planets mars = new Planets("Mars", 227.9, 6.779, 2);
+        mars.planetInfo();
+
+        double earthMarsTravel = calculateTime(earth.distanceSun, mars.distanceSun);
+        System.out.println("Travel time from Earth to Mars: " + earthMarsTravel + " hours");
+
+
+    }
+}
