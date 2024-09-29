@@ -1,0 +1,17 @@
+
+In this code I checked the statement which argues "if you take 461 and add its palindrome, then add the sum’s palindrome to itself two more times, you get another
+palindrome." 
+
+isPalindrome Function) It checks if a given string (representing a number) is a palindrome by comparing characters from the beginning and the end moving towards the center.
+
+reverseString Function) It uses StringBuilder to reverse the characters in the input string, effectively reversing the number.
+
+main method) Reads five three-digit numbers as input.
+Checks if the resulting sum is a palindrome at each step.
+For each number repeatedly adds it to its reverse up to three times, updating the number each time.
+Prints "TRUE" if a palindrome is found within three additions; otherwise, prints "FALSE".
+
+In addition, I used for loops to check the three-digit number from beginning to end and in reverse. And after that I added them to execute the statement.
+
+(Without for loops, I could use while loop as well, however since it would be harder in that case, I prefered to use  for loop.)
+
