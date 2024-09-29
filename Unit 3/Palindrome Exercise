@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class PalindromicNumbers {
+
+    public static boolean isPalindrome(String number) {
+        int len = number.length();
+        for (int i = 0; i < len / 2; i++) {
+            if (number.charAt(i) != number.charAt(len - i - 1)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static String reverseString(String number) 
+    {
+        return new StringBuilder(number).reverse().toString();
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = 5; // Total number of inputs
+
+        for (int i = 0; i < n; i++) {
+            String num = sc.next();  
+            boolean foundPalindrome = false;
+
+            for (int j = 0; j < 3; j++) {  
+                String reversed = reverseString(num);
+                int sum = Integer.parseInt(num) + Integer.parseInt(reversed);
+                num = String.valueOf(sum);  
+                
+                if (isPalindrome(num)) {  
+                    foundPalindrome = true;
+                    break;
+                }
+            }
+
+            
+            System.out.println(foundPalindrome ? "TRUE" : "FALSE");
+        }
+        sc.close();
+    }
+}
