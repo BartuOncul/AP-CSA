@@ -1,0 +1,29 @@
+public class City implements Comparable<City> 
+{
+    private String name;
+    private int population;
+
+    public City(String nm, int pop)
+    {
+        name = nm;
+        population = pop;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public int getPopulation()
+    {
+        return population;
+    }
+    public int compareToByName(City otherCity) {
+        return this.name.compareToIgnoreCase(otherCity.name);
+    }
+
+    public int compareToByPopulation(City otherCity) {
+        return Integer.compare(this.population, otherCity.population);
+    }
+}
+
+
+
