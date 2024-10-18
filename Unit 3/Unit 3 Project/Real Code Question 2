@@ -1,1 +1,28 @@
+public class SmartDoor 
+{
+    private boolean locked;
+    private int peopleInside;
+
+    public SmartDoor(boolean locked, int peopleInside)
+    {
+        this.locked = locked;
+        this.peopleInside = peopleInside;
+    }
+    public boolean isSafeToEnter()
+    {
+        if(locked == false && peopleInside<=5)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public static void main(String[]args)
+    {
+        SmartDoor s1 = new SmartDoor(false, 3);
+        s1.isSafeToEnter();
+    }
+}
 
