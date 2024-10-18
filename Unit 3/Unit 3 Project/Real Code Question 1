@@ -1,0 +1,33 @@
+public class CityComperator 
+{
+    private String city1;
+    private String city2;
+
+    public CityComperator(String city1, String city2)
+    {
+        this.city1 = city1;
+        this.city2 = city2;
+    }
+    public void compareCities()
+    {
+        if(city1.equals(city2))
+        {
+            System.out.println("The cities are the same");
+        }
+        else if(city1.compareTo(city2)<0)
+        {
+            System.out.println("City1 is alphabetically smaller than city2");
+        }
+        else
+        {
+            System.out.println("City1 comes after City2 alphabetically");
+        }
+    }
+
+    public static void main(String[]args)
+    {
+        CityComperator comparator= new CityComperator("New York", "Istanbul");
+        comparator.compareCities();
+
+    }
+}
