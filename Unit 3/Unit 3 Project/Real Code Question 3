@@ -1,0 +1,30 @@
+public class Student 
+{
+    private double GPA;
+    private int attendance;
+    private boolean honorStatus;
+
+    public Student(double GPA, int attendance, boolean honorStatus)
+    {
+        this.GPA = GPA;
+        this.attendance = attendance;
+        this.honorStatus = honorStatus;
+    }
+    public boolean isEligibleForAward()
+    {
+        if((GPA>=3.7 || honorStatus ==true) && attendance >= 90)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public static void main(String[]args)
+    {
+        Student st1 = new Student(3.77, 95, true);
+        st1.isEligibleForAward();
+    }
+    
+}
