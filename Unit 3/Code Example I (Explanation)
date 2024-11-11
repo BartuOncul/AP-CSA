@@ -48,11 +48,43 @@ hatalara yol açabilir.
 
 Truth tables
 -----------
+
+System.out.println(true && true); // Outputs: true 
+
+System.out.println(true && false); // Outputs: false
+
+
+System.out.println(true || false); // Outputs: true
+System.out.println(false || false); // Outputs: false
+
+
+int x = 15;
+if x <= 20 && x >=10) 
+{
+  System.out.println("x is between 10 and 20");
+}
+
+Not) Iki if statement da doğru olduğu için kod çalışır
   
-  A	      B	     NOT A	  A AND B	      A OR B
-------------------------------------------------
-true	  true	  false	    true	        true
-true	  false	  false	    false	        true
-false	  true	  true	    false	        true
-false	  false	  true	    false	        false
-    
+
+int x = 25;
+if (x > 20 || x < 10) 
+{
+  System.out.println("x is outside the range of 10 and 20");
+}
+
+Not) Biri true, biri false olsa da aralarında "or" işareti olduğu için çalışır.
+
+
+int x = 0;
+int y = 10;
+if (x != 0 && y / x > 5) 
+{
+  // This code won't run, and we avoid division by zero.
+}
+
+
+Comparing Primitives vs. Comparing Objects
+------------------------------------------
+
+
