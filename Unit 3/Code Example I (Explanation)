@@ -1,0 +1,58 @@
+if statement`lar, programlarda belirli koşullara göre işlemler yapmak için kullanılır. Bir koşul içerir ve eğer bu koşul dopğruysa statement'ın içerisini çalıştırır. 
+
+Example
+--------
+  
+int small = 10;
+if (small == 10) 
+{
+  System.out println("Yay, it's equal!");
+｝
+if (small == 9) 
+{
+  System.out.println("Small is nine");
+｝
+System.out.println("End program");
+
+  Not) Burada small = 10 olduğu için ilk if statement'ı doğrudur ve "Yay, it's equal!" print edilir. İkinci if statement yanlış odluğu için orası atlanır ve parantezlerin dışında kalan 
+    (unbounded) kısım print edilir.
+    
+Yay, it's equal!
+End program
+
+Example
+--------
+
+  if (4 * 5 == 20) 
+  {
+    System.out.println("True");
+  }
+
+    Not) Burada 4*5 == 20 ifadesi doğru olduğu için "True" print edilir.
+
+Else-if
+-------
+  
+Not) Else-if yapısı, birden fazla durumu kontrol etmemiz gerektiğinde kullanılır. İlk if ifadesi yanlış olduğunda, alternatif koşulları kontrol etmek için else-if blokları kullanılır. 
+Bu yapı, bir dizi koşuldan sadece birinin doğru olması durumunda belirli bir işlemi gerçekleştirmemize olanak tanır. 
+          
+Eğer bir koşul doğruysa, diğer else-if blokları atlanır.
+  
+
+Süslü parantez kullanımı
+------------------------
+  
+If yapısında tek bir satır kullanıyorsanız süslü parantezler kullanılmayabilir. Ancak, bu satırın altına yeni bir satır eklemek istediğinizde süslü parantezleri unutmak beklenmedik 
+hatalara yol açabilir.
+
+
+Truth tables
+-----------
+  
+  A	      B	     NOT A	  A AND B	      A OR B
+------------------------------------------------
+true	  true	  false	    true	        true
+true	  false	  false	    false	        true
+false	  true	  true	    false	        true
+false	  false	  true	    false	        false
+    
