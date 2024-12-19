@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class sumEllements 
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter 5 numbers");
+
+        int sum = 0;
+
+        int[] values = new int [5];
+        for(int i=0; i<values.length; i++)
+        {
+            values[i] = input.nextInt();
+            sum += values[i];
+            
+        }
+        System.out.println(sum);
+
+    }
+}
