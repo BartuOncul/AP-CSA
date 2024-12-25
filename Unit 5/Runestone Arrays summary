@@ -109,7 +109,7 @@ Unit 6: Arrays (Summary)
 
 
 Code Example of Arrays
-------------
+----------------------
 
 import java.util.Scanner;
 public class ArrayGame
