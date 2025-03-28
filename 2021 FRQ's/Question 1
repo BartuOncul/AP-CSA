@@ -1,0 +1,47 @@
+A)
+
+public int scoreGuess(String guess)
+{
+    int count = 0;
+    int height = guess.length();
+    for(int i=0; i<secret.length(); i++)
+    {
+        guess = secret.substring(i, i+height);
+        if(secret.substring(i, i + height). equals(guess))
+        {
+            count ++;
+        }
+    }
+    return count * height * height;
+}
+
+B)
+
+public String findBetterGuess(String guess1, String guess2)
+{
+    int guess1Score = scoreGuess(guess1);
+    int guess2Score = scoreGuess(guess2);
+
+    if(guess1.equals(guess2))
+    {
+        if(guess1.compareTo(guess2) > 0)
+        {
+            return guess1Score;
+        }
+        else
+        {
+            return guess2Score;
+        }
+    }
+    else
+    {
+        if(guess1Score > guess2Score)
+        {
+            return guess1Score;
+        }
+        else
+        {
+            return guess2Score;
+        }
+    }
+}
