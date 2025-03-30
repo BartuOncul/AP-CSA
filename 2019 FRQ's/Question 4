@@ -1,0 +1,73 @@
+public LightBoard(int numRows, int numCols)
+{
+    int numOn;
+    int total;
+    lights = new boolean lights[r][c];
+
+    for(int r=0; r<lights.length; r++)
+    {
+        for(int c=0; c<lights[0].length; c++)
+        {
+            if(lights[r][c] == true)
+            {
+                numOn ++;
+            }
+            total++;
+        }
+    }
+    if((double)numOn / total) / 0.4;
+    {
+        return true;
+    }
+    return false;
+}
+
+B)
+
+public boolean evaluateLight(int row, int col)
+{
+    int countOn = 0;
+    for(int row =0; row<lights.length; row++)
+    {
+        while(lights[row][col] == true)
+        {
+            countOn++;
+        }
+
+        for(int col=0; col<lights[0].length; col++)
+        {
+            if((lights[row][col] = true) && countOn %2 ==0)
+            {
+                return false;
+            }
+            if((lights[row][col] = false) && countOn %3 ==0)
+            {
+                return true;
+            }
+            return lights[row][col];
+        }
+    }
+}
+
+
+
+
+
+public boolean evaluateLight(int row, int col)
+{
+    for(ont row =0; row<lights.length; row++)
+    {
+        for(int col=0; col<lights[0].length; col++)
+        {
+            if((lights[row][col] = true) && (col % 2 ==0))
+            {
+                return false;
+            }
+            if((lights[row][col] = false) && (col % 3 ==0))
+            {
+                return true;
+            }
+            return lights[row][col];
+        }
+    }
+}
