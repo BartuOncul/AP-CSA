@@ -17,6 +17,7 @@ public static int dayOfWeek(int month, int day, int year)
     int firstDay = firstDayOfYear(year);
     int dayNum = dayOfYear(month, day, year);
     int findDay = ((dayNum - firstDay) % 7) + fistDay;
+    return rindDay;
 }
 
 
