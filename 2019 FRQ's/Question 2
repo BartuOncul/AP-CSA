@@ -17,7 +17,7 @@ public class StepTracker()
 
     public void addDailySteps(addSteps)
     {
-        if(addSteps > minSteps)
+        if(addSteps >= minSteps)
         {
             numActDays ++;
         }
