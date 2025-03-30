@@ -4,9 +4,9 @@ public LightBoard(int numRows, int numCols)
     int total;
     lights = new boolean lights[r][c];
 
-    for(int r=0; r<lights.length; r++)
+    for(int r=0; r<numRows; r++)
     {
-        for(int c=0; c<lights[0].length; c++)
+        for(int c=0; c<numCols; c++)
         {
             if(lights[r][c] == true)
             {
@@ -52,22 +52,3 @@ public boolean evaluateLight(int row, int col)
 
 
 
-
-public boolean evaluateLight(int row, int col)
-{
-    for(ont row =0; row<lights.length; row++)
-    {
-        for(int col=0; col<lights[0].length; col++)
-        {
-            if((lights[row][col] = true) && (col % 2 ==0))
-            {
-                return false;
-            }
-            if((lights[row][col] = false) && (col % 3 ==0))
-            {
-                return true;
-            }
-            return lights[row][col];
-        }
-    }
-}
