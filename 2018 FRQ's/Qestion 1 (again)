@@ -20,7 +20,7 @@ B)
 
 public double runSimulations(int num)
 {
-    int numTrue;
+    int numTrue =0;
     for(int i=0; i<num; i++)
     {
         if(simulate())
