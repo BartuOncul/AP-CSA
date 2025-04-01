@@ -27,7 +27,6 @@ public double runSimulations(int num)
         {
             numTrue++;
         }
-        num++;
     }
     return (double) numTrue/num;
 
