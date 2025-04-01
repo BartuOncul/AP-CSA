@@ -1,0 +1,26 @@
+public WordPairList(String[] words)
+{
+    ArrayList <WordPair> allPairs = new ArrayList <WordPair>();
+
+    for(int i=0; i<words.length; i++)
+    {
+        for(int j=i+1; j<words.length; j++)
+        {
+            allPairs.add(words[i], words[j]);
+        }
+    }
+}
+
+B)
+public int numMatches()
+{
+    int count = 0;
+    for(int i=0; i<allPairs.size(); i++)
+    {
+        if(allPairs.getFirst().equals(allPairs.get(Second)))
+        {
+            count ++;
+        }
+    }
+    return count;
+}
