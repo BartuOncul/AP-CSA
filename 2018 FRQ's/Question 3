@@ -1,0 +1,34 @@
+public class CodeWordChecker
+{
+    private int minLength;
+    private int maxLenght;
+    private String forbid;
+
+    public CodeWordChecker(String forbid)
+    {
+        minLength = 6;
+        maxLength = 20;
+        this.forbid = forbid;
+    }
+
+    public CodeWordChecker(int minLength, int maxLenght, String forbid)
+    {
+        this.minLength = minLength;
+        this.maxLenght = maxLenght;
+        this.forbid = forbid;
+    }
+    public boolean isValid(String str)
+    {
+        if(minLenth <= str && str<= maxLength)
+        {
+            for(int i=0; i<str.length(); i++)
+            {
+                if!(str.substring(i, i+ forbid.length()+1).equals(forbid))
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
