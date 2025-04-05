@@ -9,7 +9,7 @@ public int runSimulation()
 {
     int numEquals = 0;
     int numTry = 0;
-    while (numTry <= numSampleSize)
+    while (numTry < numSampleSize)
     {
         int die1 = (int) (Math.random()*6 + 1);
         int die2 = (int) (Math.random()*6 + 1);
