@@ -17,9 +17,9 @@ public static Position [][] getSuccessorArray(int [][] intArr)
 {
     Position[][] newArr = new Position [intArr.length-1][intArr[0].length-1];
     int num = 0;
-    for(ing r=0; r<newArr.length; r++)
+    for(ing r=0; r<intArr.length; r++)
     {
-        for(int c=0; c<newArr[0].length; c++)
+        for(int c=0; c<intArr[0].length; c++)
         {
             num = intArr[r][c];
             newArr[r][c] = findPosition(num+1, intArr[][])
