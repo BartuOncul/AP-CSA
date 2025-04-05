@@ -1,0 +1,40 @@
+public class CalorieCount
+{
+    private int calLimit;
+    private int calIntake;
+    private int protPerDay;
+    private int carbPerDay;
+    private int fatPerDay;
+
+    public CalorieCount(calLimit)
+    {
+        this.calLimit = calLimit;
+        calIntake = 0;
+        protPerDay = 0;
+        carbPerDay = 0;
+        fatPerDay = 0;
+    }
+
+    public void addMeal(addCalIntake, addProtPerDay, addCarbPerDay, addFatPerDay)
+    {
+        calIntake += addCalIntake;
+        protPerDay += addProtPerDay;
+        carbPerDay += addCarbPerDay;
+        fatPerDay += addFatPerDay;
+    }
+
+    public double getProteinPercentage()
+    {
+        return (double) 4 * protPerDay / calIntake;
+    }
+
+    public boolean onTrack()
+    {
+        if(calIntake <= calLimit)
+        {
+            return true;
+        }
+        return falase;
+    }
+    
+}
