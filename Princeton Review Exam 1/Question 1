@@ -11,7 +11,7 @@ public int runSimulation()
     int die2 = 0;
     int numEquals = 0;
     int numTry = 0;
-    while (numTry < numSampleSize)
+    while (numTry <= numSampleSize)
     {
         die1 = roll();
         die2 = roll();
