@@ -1,0 +1,29 @@
+public void replaceNthOccurence(String str, int n, String repl)
+{
+    int loc =  findNthOccurance(String str, int n);
+
+    if(loc == -1)
+    {
+        return currentPhrase;
+    }
+    else
+    {
+        return currentPhrase.substring(0, loc) + repl + currentPhrase.substring(loc + repl.length());
+    }
+}
+
+
+B)
+
+public int findLastOccurance(String str)
+{
+    int len = str.length();
+    for(int i = currentPhrase.length()-1; i >= len; i--)
+    {  
+        if(currentPhrase.substring(i-len, i+1).equals(str))
+        {
+            return i;
+        }      
+    }
+    return -1;
+}
