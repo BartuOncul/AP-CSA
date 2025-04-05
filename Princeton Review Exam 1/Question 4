@@ -1,15 +1,15 @@
 SeatingChart(Name[] names, int rows, int cols)
 {
     chart = new String[r][c];
-    for(rows=0; rows<chart.length; rows++)
+    for(int i=0; i<chart.length; i++)
     {
-        for(cols = 0; cols<chart[0].length; cols++)
+        for(int j = 0; j<chart[0].length; j++)
         {
             int num = (int)(Math.random() * names.length);
-            chart[rows][col] = names[num];
+            chart[i][j] = names[num];
         }
     }
-    if(chart[rows][cols] == n
+    if(chart[i][j] == n
 }
 
 B)
