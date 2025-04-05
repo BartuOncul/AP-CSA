@@ -1,6 +1,6 @@
 public void replaceNthOccurence(String str, int n, String repl)
 {
-    int loc =  findNthOccurance(String str, int n);
+    int loc =  findNthOccurance(str, n);
 
     if(loc == -1)
     {
