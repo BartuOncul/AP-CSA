@@ -7,12 +7,14 @@ public int roll()
 B)
 public int runSimulation()
 {
+    int die1 = 0;
+    int die2 = 0;
     int numEquals = 0;
     int numTry = 0;
     while (numTry < numSampleSize)
     {
-        int die1 = (int) (Math.random()*6 + 1);
-        int die2 = (int) (Math.random()*6 + 1);
+        die1 = roll();
+        die2 = roll();
 
         if(die1 == die2)
         {
