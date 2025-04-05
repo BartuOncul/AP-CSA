@@ -1,0 +1,28 @@
+public static Position findPosition(int num, int [][] intArr)
+{
+    for(int r=0; r<intArr.length; r++)
+    {
+        for(int c=0; c<intArr[0].length; c++)
+        {
+            if(intArr[r][c] == num)
+            {
+                return new Position(r,c)
+            }
+        }
+    }
+}
+
+B)
+public static Position [][] getSuccessorArray(int [][] intArr)
+{
+    Position[][] newArr = new Position [intArr.length-1][intArr[0].length-1];
+    int num = 0;
+    for(ing r=0; r<newArr.length; r++)
+    {
+        for(int c=0; c<newArr[0].length; c++)
+        {
+            num = newArr[r][c];
+            newArr[r][c] = findPosition(num+1, intArr[][])
+        }
+    }
+}
