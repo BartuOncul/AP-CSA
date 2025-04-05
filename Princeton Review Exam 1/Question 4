@@ -5,7 +5,7 @@ SeatingChart(Name[] names, int rows, int cols)
     {
         for(cols = 0; cols<chart[0].length; cols++)
         {
-            int num = (int)(Math.random(names.length));
+            int num = (int)(Math.random() * names.length);
             chart[rows][col] = names[num];
         }
     }
