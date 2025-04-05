@@ -20,7 +20,7 @@ public boolean checkForConfllicts(Tour t)
             {
                 return false
             }
-            return false;
+            return true;
         }
         return false;        
     }
