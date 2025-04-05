@@ -25,4 +25,5 @@ SeatingChart toString()
         }
         System.out.println();
     }
+    return str;
 }
