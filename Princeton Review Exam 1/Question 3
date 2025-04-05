@@ -1,0 +1,51 @@
+TravelPlan (String destination)
+{
+    this.destination = destination;
+    plans = new ArrayList<Tour>();
+}
+
+B)
+public boolean checkForConfllicts(Tour t)
+{
+    
+    for(int i=0; i<plans.size(); i++)
+    {
+        if(actDate == t.get(i).getActDate())
+        {
+            if((t.getStartTime() >= startTime) && (t.getEndTime() <= endTime))
+            {
+                return false;
+            }
+            else if ((t.getStartTime() <= startTime) && (t.getEndTime() <= endTime))  
+            {
+                return false
+            }
+            return false;
+        }
+        return false;        
+    }
+}
+
+C)
+
+public boolean addTour(Tour t)
+{
+    if(!checkForConfllicts(t))
+    {
+        plans.add(t);
+        return true;
+    }
+    return false;
+}
+
+
+
+
+if((startTime<t.getStartTime()) && (endTime < t.getEndTime()))
+            {
+                return true;
+            }
+            if((startTime>t.getEndTime())
+            {
+                return true;
+            }    
