@@ -1,0 +1,26 @@
+public int roll()
+{
+    for(int i=0; i<numSamples; i++)
+    {
+        int die1 = (int) (Math.random()*6 + 1);
+        return die1;
+    }
+}
+B)
+public int runSimulation()
+{
+    int numEquals = 0;
+    int numTry = 0;
+    while (numTry <= numSampleSize)
+    {
+        int die1 = (int) (Math.random()*6 + 1);
+        int die2 = (int) (Math.random()*6 + 1);
+
+        if(die1 == die2)
+        {
+            numEquals ++;
+        }
+        numTry ++;
+    }
+    return ((double) numEquals / numTry) * 100;
+}
