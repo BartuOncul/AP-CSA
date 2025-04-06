@@ -15,7 +15,7 @@ public LightBoard(int numRows, int numCols)
             total++;
         }
     }
-    if((double)numOn / total) / 0.4;
+    if((double)numOn / total) < 0.4;
     {
         return true;
     }
