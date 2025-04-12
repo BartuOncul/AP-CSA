@@ -1,0 +1,37 @@
+public int openSpaces()
+{
+    int count = 0;
+    for(int i=0; i<lot.length; i++)
+    {
+        for(int j=0; j<lot[0].length; j++)
+        {
+            if(lot[i][j] == null)
+            {
+                count++;
+            }
+        }
+    }
+    return count;
+}
+
+B)
+public boolean parkCar(Car newCar)
+{ 
+    int openSpaceCount = newCar.openSpaces();
+    if(openSpaceCount>0)
+    {
+        for(int i=0; i<lot.length; i++)
+        {
+            for(int j=0; j<lot[0].length; j++)
+            {
+                if(lot[i][j] == null)
+                {
+                    return true;
+                }
+                
+            }
+        }
+    }
+    return false;
+}
+    
