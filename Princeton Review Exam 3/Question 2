@@ -1,4 +1,4 @@
-public class Player
+public class Player eztends Person
 {
     private String name;
     private ing age;
@@ -6,8 +6,7 @@ public class Player
 
     public Player(String name, int age, String position)
     {
-        this.name = name;
-        this.age = age;
+        super(name, age)
         this.position = position;
     }
     public String getName()
