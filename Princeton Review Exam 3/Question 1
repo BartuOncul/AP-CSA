@@ -28,6 +28,8 @@ public boolean addChild(Child c)
 {
     if(findEmloyeeForChild(c) == true)
     {
-            children.add(c);
+        children.add(c);
+        return true;
     }
+    return false;
 }
