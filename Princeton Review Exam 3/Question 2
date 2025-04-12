@@ -1,0 +1,25 @@
+public class Player
+{
+    private String name;
+    private ing age;
+    private String position;
+
+    public Player(String name, int age, String position)
+    {
+        this.name = name;
+        this.age = age;
+        this.position = position;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public String getAge()
+    {
+        return age;
+    }
+    public void changePosition(newPos)
+    {
+        position = newPos;
+    }
+}
