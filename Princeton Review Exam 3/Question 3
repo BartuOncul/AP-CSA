@@ -1,0 +1,39 @@
+A)
+public static String getFirstName(String name)
+{
+    for(int i=0; i<name.length(); i++)
+    {
+        if(name.substring(i, i+1).equals(" "))
+        {
+            int spaceIndex = i;
+        }
+    }
+    return name.substring(0, i);
+}
+
+B)
+public static String getLastName(String name)
+{
+    for(int i=0; i<name.length(); i++)
+    {
+        if(name.substring(i, i+1).equals(" "))
+        {
+            int spaceIndex = i;
+        }
+    }
+    return name.substring(i+1);
+}
+
+C)
+public static int countVowels(String name)
+{
+    int count =0;
+    for(int i=0; i<name.length(); i++)
+    {
+        if((name.substring(i, i+1).equals("a")) || (name.substring(i, i+1).equals("e")) || (name.substring(i, i+1).equals("i"))  || (name.substring(i, i+1).equals("o")) || (name.substring(i, i+1).equals("u")))
+        {
+            count ++;
+        }
+    }
+    return count;
+}
