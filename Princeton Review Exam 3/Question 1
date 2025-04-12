@@ -1,9 +1,9 @@
 A)
 public boolean findEmloyeeForChild(Child c)
-{
+{    
     for(int i=0; i<children.size(); i++)
     {
-        if((children.get(i).getAge()<=maxRatio && c.get(i).canTeach(int age))
+        if((children.get(i).getAge()<=maxRatio && c.canTeach(age))
         {
             return true;
         }
@@ -15,8 +15,9 @@ public boolean runDayCare()
 {
     for(int i=0; i<children.size(); i++)
     {
-        if(!(assignChild(c)))
+        if(!(findEmloyeeForChild(c)))
         {
+            child.get(i).assignChild(c);
             return false;
         }
     }
@@ -24,3 +25,9 @@ public boolean runDayCare()
 }
 C)
 public boolean addChild(Child c)
+{
+    if(findEmloyeeForChild(c) == true)
+    {
+            children.add(c);
+    }
+}
