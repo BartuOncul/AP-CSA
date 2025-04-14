@@ -1,0 +1,35 @@
+A)
+public static boolean isSelfDivisor(int number)
+{
+    while(number>0)
+    {
+        int lastDigit = number % 10;
+        if(!(lastDigit != 0 && (number % lastDigit == 0)))
+        { 
+            return falase;
+        }
+        number /= 10;
+    }
+    return true;
+}
+
+B)
+public static int[] firstNumSelfDivisors(int start, int num)
+{
+    int[] answer = new int[num];
+    for(int i=0; i<num; i++)
+    {
+        if(isSelfDivisor(start+1) == true)
+        {
+            num[i] = start+1;
+            start++;
+        }
+        else
+        {
+            start++;
+        }
+    }
+    return answer;
+    
+    
+}
