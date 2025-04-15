@@ -1,1 +1,26 @@
+public double getScore(ArrayList<String> key)
+{
+    double score = 0.0;
+    for(int i=0; i<answers.size(); i++)
+    {
+        if(key.get(i).equals(answers.get(i)))
+        {
+            score += 1.0;
+        }
+        else if(!(answers.get(i).equals("?")))
+        {
+            score -= 0.25;
+        }
+    }
+    return score;
+}
 
+B)
+public String highestScoringStduent(ArrayList<String> key)
+{
+    int max = 0;
+    for(int i=0; i<sheets.size(); i++)
+    {
+        if()
+    }
+}
