@@ -1,0 +1,21 @@
+public class TextBook extends Book
+{
+    private int edition;
+
+    public Textbook(String title, double price, int edition)
+    {
+        super(title, price);
+        this.edition = edition;
+    }
+
+
+    public String getInfo()
+    {
+        return edition;
+    }
+
+    public boolean canSubstitudeFor(String word1)
+    {
+        if(word1.getTitle.equals(getTitle()) && )
+    }
+}
