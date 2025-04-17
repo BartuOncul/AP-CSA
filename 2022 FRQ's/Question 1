@@ -1,0 +1,39 @@
+A)
+
+public int getScore()
+{
+    int score = 0;
+    if(level1.getScore())
+    {
+        score +=level1;
+    }
+    else if(level2.getScore())
+    {
+        score += level2;
+    }
+    if(level3.getScore())
+    {
+        score += level3;
+    }
+    if(isBonus())
+    {
+        score *= 3;
+    }
+    return score;
+
+}
+
+B)
+public int playManyTimes(int num)
+{
+    int highestScore = 0;
+    for(int i=0; i<num; i++)
+    {
+        int score = getScore();
+        if(score > highestScore)
+        {
+            highestScore = score;
+        }
+    }
+    return highestScore;
+}
