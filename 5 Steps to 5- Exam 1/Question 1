@@ -1,0 +1,4 @@
+public boolean isValid(String password)
+{
+    while(password.length()>=min && password.length()>=max)
+}
