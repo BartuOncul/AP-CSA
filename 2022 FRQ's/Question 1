@@ -5,16 +5,17 @@ public int getScore()
     int score = 0;
     if(level1.getScore())
     {
-        score +=level1;
+        if(level2.getScore())
+        {
+            if(level3.getScore())
+            {
+                    score += level3; 
+            }
+            score+=level2;
+        }
+        score+=level1;
     }
-    else if(level2.getScore())
-    {
-        score += level2;
-    }
-    if(level3.getScore())
-    {
-        score += level3;
-    }
+    
     if(isBonus())
     {
         score *= 3;
