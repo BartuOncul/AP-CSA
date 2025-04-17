@@ -1,4 +1,32 @@
 public boolean isValid(String password)
 {
-    while(password.length()>=min && password.length()>=max)
+    if(password.length()>=min && password.length()<=max)
+    {
+        for(int i=0; i<password.length(); i++)
+        {
+            String letter = password.substring(i, i+1);
+            if((upper.indexOf(letter)!=-1) && (lower.indexOf(letter)!=-1) && (symbols.indexOf(letter)!=-1))
+            {
+                return true;
+            }            
+        }
+        
+    }
+    return false;
+}
+B)
+public String generatePassword()
+{
+    String passWord = "";
+    int randomIndex = (int)(Math.random()*upper.length());;
+    String randomUp = null;
+
+    int randLength = (int)(Math.random()*(maxLength-minLength)) + minLength);
+    for(int i=0; i<randLength; i++)
+    {
+        passWord += upper.substring(randomIndex, randomIndex+1);
+    }
+
+
+
 }
