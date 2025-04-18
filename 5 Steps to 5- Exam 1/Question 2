@@ -1,0 +1,49 @@
+public boolean isValid(String password)
+{
+    int countUpper = 0;
+    int countLower = 0;
+    int countSymbols = 0
+
+    if(password.length()>=minLength && password.length()<=maxLength)
+    {
+        for(int i=0; i<password.length(); i++)
+        {
+            String letter = password.substring(i, i+1);
+            if((uppper.indexOf(letter)!= -1))
+            {
+                countUpper++;
+            }
+            if((lower.indexOf(letter)!= -1))
+            {
+                countLower++
+            }
+            if((symbols.indexOf(letter)!= -1))
+            {
+                countSymbols++;
+            }
+        }
+        if((countUpper>0 && countLower>0 && countSymbols>0) && (countUpper + countLower + countSymbols == password.length()))
+        {
+            return true;
+        }
+        return false;
+    }
+}
+
+B)
+public String generatePassword()
+{
+    String letter = "";
+    String password = upper + lower + symbols;
+    int bounds = (int) ((Math.random()* maxLength - minLength) + minLength)
+    int randLetterIndex = (int) (Math.random()*maxLength);
+
+    for(int i=0; i<bounds; i++)
+    {
+        letter+=password.substring(randLetterIndex, randLetterIndex+1)
+    }
+    if(isValid(password))
+    {
+        return letter;
+    }
+}
