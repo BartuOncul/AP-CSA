@@ -4,7 +4,7 @@ public boolean isValid(String password)
     int countLower = 0;
     int countSymbols = 0
 
-    if(password.length()>=minLength && password.length()<=maxLength)
+    if(password.length()>minLength && password.length()=maxLength)
     {
         for(int i=0; i<password.length(); i++)
         {
