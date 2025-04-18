@@ -1,0 +1,10 @@
+public Pixel[][] generatePixelArray(int[][] reds, int[][] greens, int[][] blues)
+{
+    for(int i=0; i<255; i++)
+    {
+        for(int j=0; j<255; j++)
+        {
+            
+        }
+    }
+}
