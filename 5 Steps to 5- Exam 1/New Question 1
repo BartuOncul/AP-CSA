@@ -35,7 +35,7 @@ public String generatePassword()
 {
     String letter = "";
     String password = upper + lower + symbols;
-    int bounds = (int) ((Math.random()* maxLength - minLength) + minLength)
+    int bounds = (int) ((Math.random()* (maxLength - minLength)) + minLength)
     int randLetterIndex = (int) (Math.random()*maxLength);
 
     for(int i=0; i<bounds; i++)
