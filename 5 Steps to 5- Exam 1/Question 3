@@ -12,11 +12,12 @@ public double getTotalWeight()
 B)
 public ArrayList <Double> removeExcessTrainCars()
 {
+    ArrayList<Double>removed = new  ArrayList<Double>();
     for(int i=trainCars.size()-1; i<0; i--)
     {
         if(getTotalWieght() > maxWeight)
         {
-            removeExcessTrainCars.add(trainCars.get(i));
+            removed.add(trainCars.get(i));
             trainCars.remove(i);
             i--;
         }
@@ -25,6 +26,6 @@ public ArrayList <Double> removeExcessTrainCars()
             break;
         }
     }
-    return removeExcessTrainCars();
+    return removed;
     
 }
