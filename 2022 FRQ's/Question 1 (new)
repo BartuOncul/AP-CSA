@@ -1,5 +1,5 @@
 public int getScore()
-{
+{        
     int score = 0;
     if(levelOne.goalReached())
     {  
@@ -15,13 +15,26 @@ public int getScore()
     }
     if(isBonus())
     {
-        score*=3;
+        score *=3;
     }
+    return score;
 }
 
 B)
 
 public int playManyTimes(int num)
 {
-    for
+    int max = 0;
+    for(int i=0; i<num; i++)
+    {
+        play();
+        if(getScore()>max)
+        {
+            max = getScore();
+        }
+    }
+    return max;
 }
+
+
+
