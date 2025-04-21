@@ -3,11 +3,11 @@ A)
 public int getScore()
 {
     int score = 0;
-    if(level1.getScore())
+    if(level1.goalReached())
     {
-        if(level2.getScore())
+        if(level2.goalReached())
         {
-            if(level3.getScore())
+            if(level3.goalReached())
             {
                     score += level3; 
             }
