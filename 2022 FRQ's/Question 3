@@ -1,0 +1,36 @@
+public double getAverageRating()
+{
+    int sum = 0;
+    for(int i=0; i<allReviews.size(); i++)
+    {
+        sum += allReviews.get(i);
+    }
+    return (double) sum/allReviews.size();
+}
+
+B)
+
+public ArrayList<String> collectComments()
+{
+    ArrayList<String>newComment = new ArrayList<String>();
+    {
+        for(int i=0; i<allReviews.size(); i++)
+        {
+            if(allReviews.get(i).indexOf("!")!= 0)
+            {
+                newComment.add(i + "-" + allReviews.get(i));
+            }
+            
+        }
+        String lastIndex = allReviews.get(i).length-1;
+
+        for(int i=0; i<newComment.size(); i++)
+        {
+            if(((newComment.get(i).substring(lastIndex)) != ".") && (newComment.get(i).substring(lastIndex) != "!"))
+            {
+                newComment.get(i).add(".");
+            }
+        }
+        return newComment;
+    }
+}
