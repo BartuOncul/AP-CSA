@@ -1,0 +1,29 @@
+public class TextBook()
+{
+    private int editionNum;
+
+    public TextBook(String title, double price, int editionNum)
+    {
+        super(title, price);
+        this.editionNum = editionNum;
+    }
+
+    public boolean canSubstituteFor(String book)
+    {
+        if(book.getTitle().equals(getTitle()) && editionNum > book.getEdition())
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public int getEdition()
+    {
+        return editionNum;
+    }
+
+    public String getBookInfo()
+    {
+        return title + " - " + price + " - " + editionNum; 
+    }
+}
