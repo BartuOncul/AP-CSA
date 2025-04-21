@@ -1,11 +1,11 @@
 public double getAverageRating()
 {
     int sum = 0;
-    for(int i=0; i<allReviews.size(); i++)
+    for(int i=0; i<allReviews.length; i++)
     {
         sum += allReviews.get(i);
     }
-    return (double) sum/allReviews.size();
+    return (double) sum/allReviews.length;
 }
 
 B)
