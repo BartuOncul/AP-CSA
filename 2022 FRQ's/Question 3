@@ -12,11 +12,11 @@ B)
 
 public ArrayList<String> collectComments()
 {
-    ArrayList<String>newComment = new ArrayList<String>();
+    ArrayList<String> newComment = new ArrayList<String>();
     {
         for(int i=0; i<allReviews.length; i++)
         {
-            if(allReviews[i].indexOf("!")!= 0)
+            if(allReviews[i].indexOf("!")!= -1)
             {
                 newComment.add(i + "-" + allReviews.get(i));
             }
