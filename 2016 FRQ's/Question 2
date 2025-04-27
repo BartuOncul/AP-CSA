@@ -1,0 +1,39 @@
+public LogMessage(String message)
+{
+    machineId = null;
+    dexcription = null;
+
+}
+B)
+public boolean containsWord(String keyWord)
+{
+    if(description.indexOf(keyWord)!=-1)
+    {
+        if((description.indexOf(keyWord) == 0) || (description.indexOf(" " + keyWord) != -1))
+        {
+            if((description.indexOf(keyWord) == description.length()-keyWord.length()) || (description.indexOf(keyWord + " ")!= -1))
+            {
+                return true;
+            }
+            return false;
+        }
+        return false;
+    }
+    return false;
+}
+
+public List<LogMessage> removeMessages(String keyWord)
+{
+    List<LogMessage> removers = new   List<LogMessage>();
+    
+    for(int i=0; i<messageList.size(); i++)
+    {
+        if(containsWord(messageList.get(i)))
+        {
+            removers.add(messageList.get(i));
+            messageList.remove(i);
+            i--;
+        }
+    }
+    return removers;
+}
