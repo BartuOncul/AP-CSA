@@ -4,7 +4,7 @@ public LightBoard(int numRows, int numCols)
     {
         for(int c=0; c<numColls; c++)
         {
-            if((Math.random()< 0.4))
+            if((Math.random()<= 0.4))
             {
                 lights[r][c] == true;
             }
