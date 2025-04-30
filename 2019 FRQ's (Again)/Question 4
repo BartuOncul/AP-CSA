@@ -24,7 +24,7 @@ public boolean evaluateLight(int row, int col)
 
     if(lights[row][col])
     {
-        for(int i=0; i<row; i++)
+        for(int i=0; i<lights.length; i++)
         {
             if(lights[i][col])
             {
@@ -40,7 +40,7 @@ public boolean evaluateLight(int row, int col)
 
     else if(!(lights[row][col]))
     {
-        for(int i=0; i<row; i++)
+        for(int i=0; i<lights.length; i++)
         {
             if(lights[i][col])
             {
