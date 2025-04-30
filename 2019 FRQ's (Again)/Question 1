@@ -1,0 +1,20 @@
+public static int numberOfLeapYears(int year1, int year2)
+{
+    int count = 0;
+    for(int i=year1; i<=year2; i++)
+    {
+        if(isLeapYear())
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+B)
+public static int dayOfWeek(int month, int day, int year)
+{
+    int startDay = firstDayOfYear(year);
+    int lastDay = dayOfYear(month, day, year);
+    return (startDay+lastDay)%7;
+}
