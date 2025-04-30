@@ -4,7 +4,7 @@ public ArrayList<String> getDelimetersList(String[] tokens)
 
     for(int i=0; i<tokens.size(); i++)
     {
-        if((tokens.get(i).equals(openDel)) || (tokens.get(i).equals(openDel)))
+        if((tokens.get(i).equals(openDel)) || (tokens.get(i).equals(closeDel)))
         {
             allDels.add(tokens.get(i));
         }
