@@ -1,0 +1,46 @@
+public ArrayList<String> getDelimetersList(String[] tokens)
+{
+    ArrayList <String> allDels = new ArrayList<String>();
+
+    for(int i=0; i<tokens.size(); i++)
+    {
+        if((tokens.get(i).equals(openDel)) || (tokens.get(i).equals(openDel)))
+        {
+            allDels.add(tokens.get(i));
+        }
+    }
+    return allDels;
+}
+
+B)
+public boolean isBalanced(ArrayList<String>delimeters)
+{
+    int closeCount = 0;
+    int openCount = 0;
+
+    for(int i=0; i<delimeters.size(); i++)
+    {
+        if(delimeters.get(i).equals(closeDel))
+        {
+            closeCount++;
+        }
+        else
+        {
+            openCount++;
+        }
+        if(closeCount>openCount)
+        {
+            return false;
+        }
+    }
+    if(closeCount == openCount)
+    {
+        return true;
+    }
+    return false;
+  
+}
+
+
+
+}
