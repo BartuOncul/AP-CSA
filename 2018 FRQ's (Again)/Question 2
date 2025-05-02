@@ -18,7 +18,7 @@ publi int numMatches()
     int count=0;
     for(int i=0; i<allPairs.size(); i++)
     {
-        if(allPairs.getFirst().equals(allPairs.getSecond()))
+        if(allPairs.get(i).getFirst().equals(allPairs.get(i).getSecond()))
         {
             count++;
         }
