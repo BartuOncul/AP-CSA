@@ -1,0 +1,30 @@
+public static int[] getColumn(int[][] arr2D, int c)
+{
+    int[] arrResult = new int[arr2D.length];
+
+    for(int i=0; i<arr2D.length; i++)
+    {
+      arrResult[i] = arr2D[i][c];
+    }
+    return arrResult;
+}
+
+B)
+public static boolean isLatin(int[][] square)
+{
+    for(int i=0; i<square.length-1; i++)
+    {
+        if(square[i].equals(square[i+1]))
+        {
+            return false;
+        }
+    }
+
+    for(int i=0; i<square.length; i++)
+    {
+        for(int j=0; j<square[i].length; j++)
+        {
+            if((arr[0][i].equals(arr[i+1][j]))
+        }
+    }
+}
