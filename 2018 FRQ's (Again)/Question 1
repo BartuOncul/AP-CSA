@@ -1,0 +1,32 @@
+public boolean simulate()
+{
+    for(int i=0; i<numHops; i++)
+    {
+        goalDistance+=hopDistance();
+        if(goalDistance<0)
+        {
+            return false;
+        }
+        if(goalDistance>=24)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+public double runSimulations(int num)
+{
+    int countTot = 0;
+    int countTrue = 0;
+    
+    while(countTot<num)
+    {
+        if(simulate())
+        {
+            countTrue++;
+        }
+        countTot++;
+    }
+    return (double)countTrue/countTot;
+}
