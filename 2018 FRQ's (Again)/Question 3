@@ -17,16 +17,19 @@ public class CodeWordChecker()
         this.forbid= forbid;
     }
 
-    while(min<=str.length() && max>=str.length())
+    public boolean isValid()
     {
-        for(int i=0; i<=str.length()-forbid.length(); i++)
+        while(min<=str.length() && max>=str.length())
         {
-            if(str.indexOf(i, i+forbid.length())!=-1)
+            for(int i=0; i<=str.length()-forbid.length(); i++)
             {
-                return false;
+                if(str.indexOf(i, i+forbid.length())!=-1)
+                {
+                    return false;
+                }
             }
+            return true;
         }
-        return true;
+        return false;
     }
-    return false;
 }
