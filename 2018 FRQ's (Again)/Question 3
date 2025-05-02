@@ -17,7 +17,7 @@ public class CodeWordChecker()
         this.forbid= forbid;
     }
 
-    public boolean isValid()
+    public boolean isValid(String str)
     {
         while(min<=str.length() && max>=str.length())
         {
