@@ -25,7 +25,7 @@ public String findWinnerName()
     {
         if(newArr[i]>max)
         {
-            max = newArr[i];
+            max = newArr[i].getScore();
             index = i;
         }
     }
