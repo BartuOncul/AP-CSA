@@ -7,5 +7,34 @@ public static int numSymbols(String s)
 B)
 public static String passwordString(String p)
 {
-    if(num)
+    if(p.length()<5)
+    {
+        return "weak";
+    }
+    else if(p.length()>=5 && p.length()<8)
+    {
+        if(numSymbols(p)>0)
+        {
+            return "medium";
+        }
+        return "weak";
+    }
+    else
+    {
+        if((numDigits(p)>0) && (numLetter(p)>0 && (numSymbols(p)>0))
+        {
+            return "strong";
+        }
+        return "medium";
+    }
+    
 }
+
+
+
+if((p.length()>=8) && (numDigits(p)>0) && (numLetter(p)>0 && (numSymbols(p)>0)
+    {
+        return "strong";
+    }
+
+    else if(((p.length()>=5 && p.length()<8) && (numSymbols(p)>0)) || )
