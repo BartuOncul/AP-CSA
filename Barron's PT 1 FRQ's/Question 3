@@ -1,0 +1,20 @@
+public String extractCity(String cityZip)
+{
+    int idexComa  = cityZip.indexOf(",");
+    return cityZip.substring(0, indexComa);
+}
+
+B)
+
+public String getAdress(String name)
+{
+    int nameIn= lines.indexOf(name);
+    for(int i=nameIn; i<lines.size(); i++)
+    {
+        if(linex.get(i).equals(""))
+        {
+            break;
+        }
+        System.out.println(lines.get(i));     
+    }
+}
