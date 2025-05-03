@@ -10,7 +10,7 @@ public class SonowyOwl extends Owl
     }
     public String getColor()
     {
-        if(isMale())
+        if(isMale)
         {
             return "white";
         }
