@@ -1,0 +1,35 @@
+public class SonowyOwl extends Owl
+{
+    private boolean isMale;
+
+    public SnowyOwl(String name, boolean isMale)
+    {
+        super("Snowy owl");
+        this.isMale = isMale;
+       
+    }
+    public String getColor()
+    {
+        if(isMale())
+        {
+            return "white";
+        }
+        return "speckled";
+    }
+    public void eater(String food)
+    {
+        int num = (int)(Math.random()*3);
+        if(num==0)
+        {
+            food = "hare";
+        }
+        else if(num==1)
+        {
+            food = "lemming";
+        }
+        else
+        {
+            food = "small bird";
+        }
+    }
+}
