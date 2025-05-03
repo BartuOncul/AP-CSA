@@ -1,0 +1,11 @@
+public static int numSymbols(String s)
+{
+    int totLength = s.length();
+    return totLength - (numDigits(s) + numLetter(s));
+}
+
+B)
+public static String passwordString(String p)
+{
+    if(num)
+}
