@@ -29,7 +29,20 @@ public String findWinnerName()
             index = i;
         }
     }
+
+
     return newArr[index].getName();
-    
+
+    int index = 0;
+    int max = contestants[0][0].getScore();
+
+    for(int i=1; i<contestant.length; i++)
+    {
+        if(contestant[i][0].getScore() > max)
+        {
+            max= contestant[i][0].getScore();
+            index=i;
+        }
+    }
 }
 
