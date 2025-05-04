@@ -8,10 +8,10 @@ B)
 
 public String getAdress(String name)
 {
-    int nameIn= lines.indexOf(name);
+    int nameIn = lines.indexOf(name);
     for(int i=nameIn; i<lines.size(); i++)
     {
-        if(linex.get(i).equals(""))
+        if(lines.get(i).equals(""))
         {
             break;
         }
