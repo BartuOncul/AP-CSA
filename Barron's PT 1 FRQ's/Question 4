@@ -2,7 +2,7 @@ public void sortAllRows()
 {
     for(int i=0; i<NUM_ROWS; i++)
     {
-        sort(Contestant contestants[i]);
+        sort(contestants[i]);
     }
 }
 
