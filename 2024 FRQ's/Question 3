@@ -1,0 +1,27 @@
+public boolean isWordChain()
+{
+    for(int i=0; i<wordList.size()-1; i++)
+    {
+        if((wordList.get(i+1).indexOf(wordList.get(i))) == -1)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+B)
+
+public ArrayList<String> createList(String target)
+{
+    ArrayList<String> newList = new ArrayList<String>();
+
+    for(int i=0; i<wordList.size(); i++)
+    {
+        if(wordList.get(i).indexOf(target) == 0)
+        {
+            newList.add((wordList.get(i).substring(target.length)));
+        }
+    }
+    return newList;
+}
