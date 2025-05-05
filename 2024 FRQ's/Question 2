@@ -3,8 +3,8 @@ public class ScoreBoard
     private String name1;
     private String name2;
     private int score1;
-    priavte int score2;
-    priavte boolean whoseTurn;
+    private int score2;
+    private boolean whoseTurn;
 
     public ScoreBoard(String name1, String name2)
     {
@@ -17,6 +17,39 @@ public class ScoreBoard
 
     public void recordPlay(int numPoints)
     {
-        
+        if(whoseTurn)
+        {
+            if(numPoints == 0)
+            {
+                whoseTurn = !whoseTurn;
+            }
+            else
+            {
+                score1 += numPoints;
+            }
+        }
+        else
+        {
+            if(numPoints == 0)
+            {
+                whoseTurn = !whoseTurn;
+            }
+            else
+            {
+                score2 += numPoints;
+            }
+        }
+    }
+
+    public String getScore()
+    {
+        if(whoseTurn)
+        {
+            return score1 + " - " + score2 + " - " + name1;
+        }
+        else
+        {
+            return score1 + " - " + score2 + " - " + name2;
+        }
     }
 }
