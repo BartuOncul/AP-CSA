@@ -1,0 +1,39 @@
+public void simulateOneDay(int numBirds)
+{
+    if(Math.random() > 0.05)
+    {
+        int randomEat = (int)((Math.random()*41) + 10);
+
+        if((randomEat * numBirds) >= currentFood)
+        {
+            currentFood = 0;
+        }
+        currentFood = currentFood - (randomEat * numBirds);
+    
+    }
+    else
+    {
+        currentFood = 0;
+    }
+
+B)
+
+public int simulateManyDays(int numBirds, int numDays)
+{
+    int count = 0;
+    for(int i=0; i<numDays; i++)
+    {
+        simulateOneDay(numBirds);
+        
+        if(currentFood>0)
+        {
+            count++;
+        }
+        else
+        {
+            return count;
+        }
+    }
+    return count;
+    
+}
