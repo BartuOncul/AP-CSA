@@ -18,6 +18,7 @@ public int getScore()
     {
         score *= 3;
     }
+    return score;
 }
 
 B)
