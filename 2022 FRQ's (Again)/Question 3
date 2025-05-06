@@ -23,8 +23,8 @@ public ArrayList<String> collectComments()
     }
     for(int i=0; i<newComments.size(); i++)
     {
-        int lastIndex  = newComments.get(i).substring(newComments.get(i).length()-1);
-        if(!(collectComments.get(i).getComment().indexOf(lasIndex) == ".") || (collectComments.get(i).getComment().indexOf(lasIndex) == "!"))
+        int lastIndex  = newComments.get(i).getComment().substring(newComments.get(i).getComment().length()-1);
+        if(!(newComments.get(i).getComment().indexOf(lasIndex) == ".") || (newComments.get(i).getComment().indexOf(lasIndex) == "!"))
         {
             newComments.get(i).add(".");
         }
