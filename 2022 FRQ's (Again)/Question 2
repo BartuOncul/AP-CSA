@@ -1,0 +1,32 @@
+public class Textbook extends Book
+{
+    private String title;
+    private double price;
+    private int editionNum;
+
+    public Textbook(String title, double price, int editionNum)
+    {
+        super(title, price);
+        this.editionNum = editionNum;
+    }
+
+    public int getEdition()
+    {
+        return editionNum;
+    }
+
+    public String getBookInfo()
+    {
+        return title + " - " + price + " - " + editionNum;
+    }
+
+    public boolean canSustitudeFor(Textbook t1)
+    {
+        if((t1.getTitle().equals(title)) && (t1.getEdition() >= getEdition()))
+        {
+            return true;
+        }
+        return false;
+    }
+    
+}
