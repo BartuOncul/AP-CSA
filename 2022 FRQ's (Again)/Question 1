@@ -1,0 +1,41 @@
+public int getScore()
+{
+    int score = 0;
+    if(levelOne.goalReached())
+    {
+        if(levelTwo.goalReached())
+        {
+            if(levelThree.goalReached())
+            {
+                score+=levelThree;
+            }
+            score+= levelTwo;
+        }
+        score+=levelOne;  
+        
+    }
+    if(isBonus())
+    {
+        score *= 3;
+    }
+}
+
+B)
+
+public int playManyTimes(int num)
+{
+    int max = 0;
+    play();
+    
+    for(int i=0; i<num; i++)
+    {
+        if(getScore() > max)
+        {
+            max = getScore();
+        }
+    }
+    return max;
+}
+
+
+
