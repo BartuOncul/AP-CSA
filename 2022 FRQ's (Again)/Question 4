@@ -1,0 +1,39 @@
+public void repopulate()
+{
+    for(int i=0; i<grid.length; i++)
+    {
+        for(int j=0; j<grid[0].length; j++)
+        {
+            int randVal = (int) ((Math.random()*MAX)+1);
+            if((randVal % 10 == 0) && (randVal % 100 != 0))
+            {
+                grid[i][j] = randVal;
+            }
+        }
+    }
+}
+
+B)
+
+public int countIncreasingCols()
+{
+    int countTotal = 0;
+    int countReal = 0;
+
+    for(int i=0; i<grid[0].length; i++)
+    {
+        for(int j=0; j<grid.length-1; j++)
+        {
+            if(grid[j+1][i] >= grid[j][i])
+            {
+                countTotal++;
+            }
+        }
+        if(countTotal == grid[0].length-1) // I checked if all values are increasing in that column
+        {
+            countReal++;
+        }
+        countTotal = 0;
+    }
+    return countReal;
+}
