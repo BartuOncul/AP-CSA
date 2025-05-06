@@ -20,9 +20,9 @@ public class Textbook extends Book
         return title + " - " + price + " - " + editionNum;
     }
 
-    public boolean canSustitudeFor(Textbook t1)
+    public boolean canSubstitudeFor(Textbook t1)
     {
-        if((t1.getTitle().equals(title)) && (t1.getEdition() >= getEdition()))
+        if((t1.getTitle().equals(title)) && (getEdition() >= t1.getEdition())) 
         {
             return true;
         }
